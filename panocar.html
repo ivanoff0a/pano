@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Pano Car</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/type.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/media.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/fonts.css">
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/jquery.fancybox.min.css">
+</head>
+<body>
+
+<div class="text__container" style="display: none;" id="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias cum delectus doloremque est, et exercitationem fuga libero maiores nemo officiis possimus quasi quis sapiente soluta tempora voluptatem? Alias, quia.</p>
+    <div class="btn__container">
+        <button class="close">Закрыть</button>
+        <button class="ok">ОК</button>
+    </div>
+</div>
+
+<section class="intro">
+    <header class="intro__header">
+        <div class="header__brand">
+            <a href="index.html">
+                <div class="brand__logo">
+                    <img src="assets/images/logo.svg" alt="Лого">
+                </div>
+            </a>
+            <div class="brand__text">
+                <div class="brand__class">
+                    <p>Car</p>
+                </div>
+                <div class="brand__info">
+                    <p>Сервис для создания 360 vr туров</p>
+                </div>
+            </div>
+        </div>
+        <div class="header__links">
+            <div><a href="index.html">Главная</a></div>
+            <div><a href="" data-animation-duration="700" data-fancybox data-src="#text" href="javascript:;">Тарифы</a></div>
+            <div><a href="" data-animation-duration="700" data-fancybox data-src="#text" href="javascript:;">Контакты</a></div>
+        </div>
+        <div class="header__log">
+            <button data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Вход/Регистрация</button>
+        </div>
+    </header>
+    <div class="intro__container">
+        <div class="menu__container">
+            <a href="panogallery.html">
+                <div class="menu__item">
+                    <div class="menu__img">
+                        <img src="assets/images/categories-white/iconfinder_photo-picture-photobook-gallery-photograph_3209437.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Gallery</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panoroom.html">
+                <div class="menu__item">
+                    <div class="menu__img">
+                        <img src="assets/images/categories-white/key-card.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Room</p>
+                    </div>
+
+                </div>
+            </a>
+            <a href="panocar.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/racing.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Car</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panotour.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/sunset.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Tour</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panoevents.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/theater-masks.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Events</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="start__container headline-big">
+            <p>Погрузите клиента в атмосферу отдыха</p>
+            <p>до того как он заплатит Вам</p>
+            <button class="grey" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Создать галерею</button>
+        </div>
+        <div class="owl-carousel bg-carousel owl-theme">
+            <div class="img360__container">
+                <div id="panorama-car1" class="panorama"></div>
+                <div class="play__container play-car1">
+                    <img src="assets/images/play.svg">
+                </div>
+            </div>
+            <div class="img360__container">
+                <div id="panorama-car2" class="panorama"></div>
+                <div class="play__container play-car2">
+                    <img src="assets/images/play.svg">
+                </div>
+            </div>
+            <div class="img360__container">
+                <div id="panorama-car3" class="panorama"></div>
+                <div class="play__container play-car3">
+                    <img src="assets/images/play.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form__container" style="display: none;" id="form">
+        <form class="full-form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Pano Service">
+            <input type="hidden" name="admin_email" value="lolmoltololmoltol@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields -->
+            <div class="form__item">
+                <p>Имя</p>
+                <input type="text" name="Имя" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form__item">
+                <p>Email</p>
+                <input type="text" name="Email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form__item">
+                <p>Телефон</p>
+                <input type="text" name="Телефон" placeholder="Введите ваш телефон" required>
+            </div>
+            <div class="form__submit">
+                <button class="grey">Отправить</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<section class="process">
+    <div class="process__container">
+        <div class="process__header">
+            <p class="section__headline brown-txt">Закажите съёмку 360 и получите бесплатное составление и размещение объявления под ключ </p>
+            <p class="section__text service__txt">После съёмки вашего авто вы получите готовое сформированное объявление сделанное с помощью наших специалистов.</p>
+        </div>
+    </div>
+</section>
+
+<section class="work">
+    <div class="work__container">
+        <div class="work__header">
+            <p class="section__headline brown-txt">Как это работает</p>
+        </div>
+        <div class="work__body">
+            <img src="assets/images/work.png">
+        </div>
+    </div>
+</section>
+
+<section class="exterior">
+    <div class="exterior__container">
+        <div class="exterior__header">
+            <!--<div class="photo360" id="spinTv" data-source="assets/images/car/{frame}.png"-->
+                 <!--data-digits="2" data-frames="52" data-width="1000" data-height="600" data-first-frame="1" data-auto="true"-->
+                 <!--data-reverse="true" data-animate="true" data-sense="1" data-frameTime="40">-->
+            <!--</div>-->
+            <img src="assets/images/car/01.png" width="900" height="450" id="my_image"
+                 class="reel"
+                 data-frames="52"
+                 data-animation-duration="0.5"
+                 data-images="assets/images/car/##.png">
+        </div>
+        <div class="exterior__body">
+            <p class="section__headline brown-txt">Создание панорамного экстерьера авто</p>
+            <p class="section__text service__txt">С помощью курсора или тачскрина можно детально и разных сторон посмотреть на авто</p>
+            <button class="grey grey-brdr grey-hvr2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Подать заявку на съёмку</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="subscribe">
+    <div class="subscribe__header partners__header grey">
+        <p>Тарифы</p>
+    </div>
+    <div class="subscribe__body">
+        <div class="subscribe__item">
+            <p class="exterior-text">Экстерьер - 10 000 тг. </p>
+            <button class="grey-txt grey-brdr grey-hvr" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Заказать</button>
+        </div>
+        <div class="subscribe__item">
+            <p class="exterior-text">Экстерьер интерьер - 12 000 тг. </p>
+            <button class="grey-txt grey-brdr grey-hvr" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Заказать</button>
+        </div>
+        <div class="subscribe__item">
+            <p class="exterior-text">Интерьер - 5 000 тг. </p>
+            <button class="grey-txt grey-brdr grey-hvr" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Заказать</button>
+        </div>
+    </div>
+</section>
+
+<section class="terminals">
+    <div class="subscribe__header partners__header grey">
+        <p>Наши терминалы</p>
+    </div>
+    <div class="terminals__body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d164734.45305572473!2d73.02888720901615!3d49.82411948954859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562493608029!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="request">
+    <div class="request__header grey">
+        <button class="grey-hvr2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Сотрудничество</button>
+        <button class="grey-hvr2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Обучение</button>
+        <button class="grey-hvr2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Наши услуги</button>
+    </div>
+    <div class="request__body">
+        <div class="request__text">
+            <p>Сделайте ваши продажи
+                ещё эффективнее с панорамной
+                презентацией вашего продукта</p>
+        </div>
+        <div class="request__form">
+            <p>Подайте заявку<br>
+                на профессиональную съёмку и продакшн 360</p>
+            <div class="form__container2">
+                <form class="email-form">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Pano Service">
+                    <input type="hidden" name="admin_email" value="lolmoltololmoltol@gmail.com">
+                    <input type="hidden" name="form_subject" value="Профессиональная съёмка и продакшн 360">
+                    <!-- END Hidden Required Fields -->
+                    <div class="email__container">
+                        <input type="text" name="Email" placeholder="ваша@почта.пример">
+                        <button class="grey">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="partners__header grey">
+        <p>Наши партнеры</p>
+    </div>
+    <div class="partners__body">
+        <div class="partners__item">
+            <a target="_blank" href="https://www.booking.com/index.html?aid=376376;label=bookings-name-x9XjJRNqhtTGZ30YXWfPUQS267724389816:pl:ta:p1:p22.481.000:ac:ap1t1:neg:fi:tiaud-294889296893:kwd-65526620:lp9047064:li:dec:dm;ws=&gclid=CjwKCAjw6vvoBRBtEiwAZq-T1TcoSsXw-lSwTHI7VH7EXj32QVtAwu9oN65kNZsXu4_vUTHLcSQLshoCOF0QAvD_BwE"><img src="assets/images/partners/1.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://krisha.kz/"><img src="assets/images/partners/2.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://www.kolesa.ru/?ab3&utm_expid=113159526-3.cVZ7Y9y3SHacjXV6yCIKWg.3&utm_referrer=https%3A%2F%2Fwww.google.com%2F"><img src="assets/images/partners/3.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://www.avito.ru/rossiya?s_trg=3"><img src="assets/images/partners/4.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://www.olx.kz/"><img src="assets/images/partners/5.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://m.circlekrussia.ru/"><img src="assets/images/partners/6.png" alt=Партнер></a>
+        </div>
+        <div class="partners__item">
+            <a target="_blank" href="https://2gis.ru/"><img src="assets/images/partners/7.png" alt=Партнер></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer__links grey">
+        <div><a href="index.html">PANO Service</a></div>
+        <div><a href="panoroom.html">PANO Room</a></div>
+        <div><a href="panocar.html">PANO Car</a></div>
+        <div><a href="panotour.html">PANO Tour</a></div>
+        <div><a href="panoevents.html">PANO Events</a></div>
+    </div>
+    <div class="footer__copyright">
+        <p class="grey-txt">﻿Copyright © 2019 PANO</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/scripts/libs/jquery-3.4.1.min.js"></script>
+<script>
+
+    carviewer1 = pannellum.viewer('panorama-car1', {
+        "type": "equirectangular",
+        "panorama": "assets/images/office.jpg", // путь к панораме
+        "showControls": false,
+        "autoLoad": true,
+        "autoRotate": 4,
+        "autoRotateInactivityDelay": 4,
+        "showFullscreenCtrl": true
+    });
+
+    $('.play-car1').click(function () {
+        carviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card').click(function () {
+        carviewer1.toggleFullscreen();
+    });
+
+
+    // carviewer2 = pannellum.viewer('panorama-car2', {
+    //     "type": "equirectangular",
+    //     "panorama": "assets/images/office.jpg",
+    //     "showControls": false,
+    //     "autoLoad": true,
+    //     "autoRotate": 4,
+    //     "autoRotateInactivityDelay": 4,
+    //     "showFullscreenCtrl": true
+    // });
+    //
+    // $('.play-car2').click(function () {
+    //     carviewer2.toggleFullscreen();
+    // });
+    //
+    // carviewer3 = pannellum.viewer('panorama-car3', {
+    //     "type": "equirectangular",
+    //     "panorama": "assets/images/office.jpg",
+    //     "showControls": false,
+    //     "autoLoad": true,
+    //     "autoRotate": 4,
+    //     "autoRotateInactivityDelay": 4,
+    //     "showFullscreenCtrl": true
+    // });
+    //
+    // $('.play-car3').click(function () {
+    //     carviewer3.toggleFullscreen();
+    // });
+
+</script>
+<script type="text/javascript" src="assets/scripts/libs/jquery.reel.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/scripts/script.js"></script>
+</body>
+</html>

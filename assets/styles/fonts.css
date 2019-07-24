@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Acumin-R";
+    src: url("./../fonts/Acumin-RPro.otf");
+}
+
+@font-face {
+    font-family: "Leelaw";
+    src: url("./../fonts/LeelawUI.ttf");
+}
+
+@font-face {
+    font-family: "Prompt-B";
+    src: url("./../fonts/Prompt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Segoe-LI";
+    src: url("./../fonts/SegoeUILightItalic.ttf");
+}

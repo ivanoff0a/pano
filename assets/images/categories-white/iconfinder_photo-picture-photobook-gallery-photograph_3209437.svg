@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.788" height="50.189" viewBox="0 0 54.788 50.189">
+  <defs>
+    <filter id="Path_13" x="0" y="0" width="54.788" height="50.189" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="iconfinder_photo-picture-photobook-gallery-photograph_3209437" transform="translate(8 2)">
+    <g transform="matrix(1, 0, 0, 1, -8, -2)" filter="url(#Path_13)">
+      <path id="Path_13-2" data-name="Path 13" d="M33.189,30.824h4.6V4H6.365V8.6H1V36.189H33.189ZM7.9,5.533H36.255V29.291H33.189V8.6H7.9Zm-1.533,4.6H31.656v5.814L28.591,12.88,15.562,25.909,7.9,18.244,2.533,23.609V10.131ZM31.656,34.656H2.533v-8.88L7.9,20.412l7.664,7.664L28.591,15.047l3.066,3.066V34.656Z" transform="translate(8 2)" fill="#fff"/>
+    </g>
+    <path id="Path_14" data-name="Path 14" d="M18.832,22.664A3.832,3.832,0,1,0,15,18.832,3.836,3.836,0,0,0,18.832,22.664Zm0-6.131a2.3,2.3,0,1,1-2.3,2.3A2.3,2.3,0,0,1,18.832,16.533Z" transform="translate(-3.27 -2.57)" fill="#fff"/>
+  </g>
+</svg>

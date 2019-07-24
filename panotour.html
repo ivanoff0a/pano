@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Pano Tour</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/type.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/media.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/fonts.css">
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/vendor/jquery.fancybox.min.css">
+</head>
+<body>
+
+<div class="text__container" style="display: none;" id="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias cum delectus doloremque est, et exercitationem fuga libero maiores nemo officiis possimus quasi quis sapiente soluta tempora voluptatem? Alias, quia.</p>
+    <div class="btn__container">
+        <button class="close">Закрыть</button>
+        <button class="ok">ОК</button>
+    </div>
+</div>
+
+<section class="intro">
+    <header class="intro__header">
+        <div class="header__brand">
+            <a href="index.html">
+                <div class="brand__logo">
+                    <img src="assets/images/logo.svg" alt="Лого">
+                </div>
+            </a>
+            <div class="brand__text">
+                <div class="brand__class">
+                    <p>Tour</p>
+                </div>
+                <div class="brand__info">
+                    <p>Сервис для создания 360 vr туров</p>
+                </div>
+            </div>
+        </div>
+        <div class="header__links">
+            <div><a href="index.html">Главная</a></div>
+            <div><a href="" data-animation-duration="700" data-fancybox data-src="#text" href="javascript:;">Тарифы</a></div>
+            <div><a href="" data-animation-duration="700" data-fancybox data-src="#text" href="javascript:;">Контакты</a></div>
+        </div>
+        <div class="header__log">
+            <button data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Вход/Регистрация</button>
+        </div>
+    </header>
+    <div class="intro__container">
+        <div class="menu__container">
+            <a href="panogallery.html">
+                <div class="menu__item">
+                    <div class="menu__img">
+                        <img src="assets/images/categories-white/iconfinder_photo-picture-photobook-gallery-photograph_3209437.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Gallery</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panoroom.html">
+                <div class="menu__item">
+                    <div class="menu__img">
+                        <img src="assets/images/categories-white/key-card.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Room</p>
+                    </div>
+
+                </div>
+            </a>
+            <a href="panocar.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/racing.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Car</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panotour.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/sunset.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Tour</p>
+                    </div>
+                </div>
+            </a>
+            <a href="panoevents.html">
+                <div class="menu__item">
+                    <div class="menu__img moved-icons">
+                        <img src="assets/images/categories-white/theater-masks.svg">
+                    </div>
+                    <div class="menu__name">
+                        <p>Events</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="start__container headline-big">
+            <p>Погрузите клиента в атмосферу отдыха</p>
+            <p>до того как он заплатит Вам</p>
+            <button class="pool" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Создать галерею</button>
+        </div>
+        <div class="owl-carousel bg-carousel owl-theme">
+            <div class="img360__container">
+                <div id="panorama-tour1" class="panorama"></div>
+                <div class="play__container play-tour1">
+                    <img src="assets/images/play.svg">
+                </div>
+            </div>
+            <div class="img360__container">
+                <div id="panorama-tour2" class="panorama"></div>
+                <div class="play__container play-tour2">
+                    <img src="assets/images/play.svg">
+                </div>
+            </div>
+            <div class="img360__container">
+                <div id="panorama-tour3" class="panorama"></div>
+                <div class="play__container play-tour3">
+                    <img src="assets/images/play.svg">
+                </diassets
+            </div>
+        </div>
+    </div>
+    <div class="form__container" style="display: none;" id="form">
+        <form class="full-form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Pano Service">
+            <input type="hidden" name="admin_email" value="lolmoltololmoltol@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields -->
+            <div class="form__item">
+                <p>Имя</p>
+                <input type="text" name="Имя" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form__item">
+                <p>Email</p>
+                <input type="text" name="Email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form__item">
+                <p>Телефон</p>
+                <input type="text" name="Телефон" placeholder="Введите ваш телефон" required>
+            </div>
+            <div class="form__submit">
+                <button class="pool">Отправить</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<div class="request__body">
+    <div class="request__text">
+        <p>Сделайте ваши продажи
+            ещё эффективнее с панорамной
+            презентацией вашего продукта</p>
+    </div>
+    <div class="request__form">
+        <p>Подайте заявку<br>
+            на профессиональную съёмку и продакшн 360</p>
+        <div class="form__container2">
+            <form class="email-form">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Pano Service">
+                <input type="hidden" name="admin_email" value="lolmoltololmoltol@gmail.com">
+                <input type="hidden" name="form_subject" value="Профессиональная съёмка и продакшн 360">
+                <!-- END Hidden Required Fields -->
+                <div class="email__container">
+                    <input type="text" name="Email" placeholder="ваша@почта.пример">
+                    <button class="pool">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<section class="gallery">
+    <div class="gallery__search">
+        <input type="text" name="search" placeholder="Искать..">
+        <div class="gallery__options">
+            <img src="assets/images/search.svg">
+            <img src="assets/images/like-gray.svg">
+            <img src="assets/images/options.svg">
+        </div>
+        <div class="gallery__categories controls">
+            <p class="control all-img" data-filter="all">Категории</p>
+            <img class="control room-img" data-toggle=".room-cat" src="assets/images/categories-grey/key-card.svg">
+            <img class="control cars-img" data-toggle=".cars-cat" src="assets/images/categories-grey/racing.svg">
+            <img class="control tour-img" data-toggle=".tour-cat" src="assets/images/categories-grey/sunset.svg">
+            <img class="control events-img" data-toggle=".events-cat" src="assets/images/categories-grey/theater-masks.svg">
+        </div>
+
+    </div>
+    <div class="gallery__container">
+        <div class="pano__card pano__card-tour1 mix tour-cat">
+            <div class="pano__preview tour">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-TOUR</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour2 mix events-cat">
+            <div class="pano__preview theatre-bg">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-EVENTS</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour3 mix cars-cat">
+            <div class="pano__preview car">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-CAR</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour4 mix room-cat">
+            <div class="pano__preview room">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-ROOM</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour5 mix tour-cat">
+            <div class="pano__preview tour">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-TOUR</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour6 mix tour-cat">
+            <div class="pano__preview tour">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-ROOM</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour7 mix events-cat">
+            <div class="pano__preview theatre-bg">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-EVENTS</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour8 mix cars-cat">
+            <div class="pano__preview car">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-CARS</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour9 mix room-cat">
+            <div class="pano__preview room">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-ROOM</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour10 mix cars-cat">
+            <div class="pano__preview car">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-CARS</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour11 mix events-cat">
+            <div class="pano__preview theatre-bg">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-EVENTS</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+        <div class="pano__card pano__card-tour12 mix room-cat">
+            <div class="pano__preview room">
+                <div class="pano__save">
+                    <img src="assets/images/paperclip.svg">
+                </div>
+            </div>
+            <div class="pano__info">
+                <div class="pano__rates pano__views">
+                    <img src="assets/images/eye.svg">
+                    <p>10000</p>
+                </div>
+                <div class="pano__name">
+                    <p>PANO-ROOM</p>
+                    <p>Хорошая панорама   12345</p>
+                </div>
+                <div class="pano__rates pano__likes">
+                    <img src="assets/images/like.svg">
+                    <p>10000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div class="subscribe__header-f partners__header pool">
+        <p>Подписка</p>
+    </div>
+    <div class="subscribe__body-f">
+        <div class="subscribe__item-f first">
+            <p class="pool-txt">Free</p>
+            <p>30 дней бесплатный период</p>
+            <button class="pool-txt pool-brdr pool-hvr click-btn2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Регистрация</button>
+            <button class="pool-hvr2 click-btn" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Сотрудничество</button>
+        </div>
+        <div class="subscribe__item-f second">
+            <p class="pool-txt">STANDARD</p>
+            <p>Без маркетинговых инструментов</p>
+            <button class="pool-txt pool-brdr pool-hvr click-btn2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Заказать</button>
+            <button  class="pool-hvr2 click-btn click-btn" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Обучение</button>
+        </div>
+        <div class="subscribe__item-f third">
+            <p class="pool-txt">VIP</p>
+            <p>Все включено</p>
+            <button class="pool-txt pool-brdr pool-hvr click-btn2" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Заказать</button>
+            <button  class="pool-hvr2 click-btn" data-animation-duration="700" data-fancybox data-src="#form" href="javascript:;">Наши услуги</button>
+        </div>
+        <div class="bg-test pool"></div>
+    </div>
+</section>
+
+<section class="request">
+    <div class="request__body">
+        <div class="request__text">
+            <p>Сделайте ваши продажи
+                ещё эффективнее с панорамной
+                презентацией вашего продукта</p>
+        </div>
+        <div class="request__form">
+            <p>Подайте заявку<br>
+                на профессиональную съёмку и продакшн 360</p>
+            <div class="form__container2">
+                <form class="email-form">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Pano Service">
+                    <input type="hidden" name="admin_email" value="ivanoff.a234@gmail.com">
+                    <input type="hidden" name="form_subject" value="Профессиональная съёмка и продакшн 360">
+                    <!-- END Hidden Required Fields -->
+                    <div class="email__container">
+                        <input type="text" name="Email" placeholder="ваша@почта.пример">
+                        <button class="pool">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="partners__header pool">
+        <p>Наши партнеры</p>
+    </div>
+    <div class="partners__body">
+        <div class="partners__body">
+            <div class="partners__item">
+                <a target="_blank" href="https://www.booking.com/index.html?aid=376376;label=bookings-name-x9XjJRNqhtTGZ30YXWfPUQS267724389816:pl:ta:p1:p22.481.000:ac:ap1t1:neg:fi:tiaud-294889296893:kwd-65526620:lp9047064:li:dec:dm;ws=&gclid=CjwKCAjw6vvoBRBtEiwAZq-T1TcoSsXw-lSwTHI7VH7EXj32QVtAwu9oN65kNZsXu4_vUTHLcSQLshoCOF0QAvD_BwE"><img src="assets/images/partners/1.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://krisha.kz/"><img src="assets/images/partners/2.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://www.kolesa.ru/?ab3&utm_expid=113159526-3.cVZ7Y9y3SHacjXV6yCIKWg.3&utm_referrer=https%3A%2F%2Fwww.google.com%2F"><img src="assets/images/partners/3.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://www.avito.ru/rossiya?s_trg=3"><img src="assets/images/partners/4.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://www.olx.kz/"><img src="assets/images/partners/5.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://m.circlekrussia.ru/"><img src="assets/images/partners/6.png" alt=Партнер></a>
+            </div>
+            <div class="partners__item">
+                <a target="_blank" href="https://2gis.ru/"><img src="assets/images/partners/7.png" alt=Партнер></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer__links pool">
+        <div><a href="index.html">PANO Service</a></div>
+        <div><a href="panoroom.html">PANO Room</a></div>
+        <div><a href="panocar.html">PANO Car</a></div>
+        <div><a href="panotour.html">PANO Tour</a></div>
+        <div><a href="panoevents.html">PANO Events</a></div>
+    </div>
+    <div class="footer__copyright">
+        <p class="pool-txt">﻿Copyright © 2019 PANO</p>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="assets/scripts/libs/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/mixitup.min.js"></script>
+<script>
+    var containerEl = document.querySelector('.gallery__container');
+    var mixer = mixitup(containerEl);
+
+    tourviewer1 = pannellum.viewer('panorama-tour1', {
+        "type": "equirectangular",
+        "panorama": "assets/images/office.jpg", // путь к панораме
+        "showControls": false,
+        "autoLoad": true,
+        "autoRotate": 4,
+        "autoRotateInactivityDelay": 4,
+        "showFullscreenCtrl": true
+    });
+
+    $('.play-tour1').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    // tourviewer2 = pannellum.viewer('panorama-tour2', {
+    //   "type": "equirectangular",
+    //   "panorama": "https://pannellum.org/images/alma.jpg",
+    //   "showControls": false,
+    //   "autoLoad": true,
+    //   "autoRotate": 4,
+    //   "autoRotateInactivityDelay": 4,
+    //   "showFullscreenCtrl": true
+    // });
+    //
+    // $('.play-tour2').click(function () {
+    //   tourviewer2.toggleFullscreen();
+    // });
+    //
+    // tourviewer3 = pannellum.viewer('panorama-tour3', {
+    //   "type": "equirectangular",
+    //   "panorama": "assets/images/office.jpg",
+    //   "showControls": false,
+    //   "autoLoad": true,
+    //   "autoRotate": 4,
+    //   "autoRotateInactivityDelay": 4,
+    //   "showFullscreenCtrl": true
+    // });
+    //
+    // $('.play-tour3').click(function () {
+    //   tourviewer3.toggleFullscreen();
+    // });
+
+    $('.pano__card-tour1').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour2').click(function () {
+        tourviewer2.toggleFullscreen();
+    });
+
+    $('.pano__card-tour3').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour4').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour5').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour6').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour7').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour8').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour9').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour10').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour11').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+
+    $('.pano__card-tour12').click(function () {
+        tourviewer1.toggleFullscreen();
+    });
+</script>
+<script type="text/javascript" src="assets/scripts/libs/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="assets/scripts/libs/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/scripts/script.js"></script>
+</body>
+</html>
